@@ -1,0 +1,58 @@
+.TH simple_shell "1" "28 april 2023" "simple_shell(1)" "simple_shell manual page"
+.SH NAME
+.B simple_shell
+.SH SYNOPSIS
+.B ./hsh is the executable of this simple_shell
+.SH DESCRIPTION
+ This is a simple shell program that reads user commands from standard input
+ and executes them. It provides a command line interface, with support for
+ executing external commands, changing directories, and exiting the shell.
+
+
+
+.SH EXAMPLE
+.B The shell should work like this in interactive mode:
+.br
+ $ ./hsh
+.br
+ ($) /bin/ls
+.br
+ hsh main.c shell.c
+.br
+ ($)
+.br
+ ($) exit
+.br
+ $
+
+.B Also like this in non-interactive mode:
+.br
+ $ echo "/bin/ls" | ./hsh
+.br
+ hsh main.c shell.c test_ls_2
+.br
+ $
+.br
+ $ cat test_ls_2
+.br
+ /bin/ls
+.br
+ /bin/ls
+.br
+ $
+.br
+ $ cat test_ls_2 | ./hsh
+.br
+ hsh main.c shell.c test_ls_2
+.br
+ hsh main.c shell.c test_ls_2
+.br
+ $
+.br
+.SH RETURN VALUE
+
+If the command is welled execute, the list will appear.
+If it fail, an error message will be displayed.
+
+.SH AUTHORS
+This version of shell was written by Benjamin Vandamme and Quentin Rouger.
