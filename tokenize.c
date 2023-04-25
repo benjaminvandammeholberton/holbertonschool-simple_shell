@@ -9,7 +9,7 @@ char ** tokenize(char *str, char *delim)
         int i = 0;
         int count = 1;
 
-        str_cpy = strdup(str);
+        str_cpy = _strdup(str);
 
         token = strtok(str_cpy, delim);
         while(token)

@@ -3,11 +3,11 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
+#include <string.h>
 
 extern char ** environ;
 
@@ -18,10 +18,14 @@ char *_getenv(const char *name);
 char *checkingabsolutepath (char *str);
 int _strncmp(const char *s1, const char *s2, size_t n);
 char *_strdup(char *str);
-int _strlen(char *s);
+int _strlen(const char *s);
 char *prompt (int statut);
 int inter_shell(void);
 int noninter_shell(void);
+char *_strcat(char *dest, char *src);
+char *_strcpy(char *dest, char *src);
+int _strcmp(char *s1, char *s2);
+
 
 
 #endif

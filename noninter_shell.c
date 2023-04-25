@@ -16,7 +16,7 @@ int noninter_shell(void)
 
 
         buffer = prompt(statut);
-        if (strcmp(buffer, "\n") == 0)
+        if (_strcmp(buffer, "\n") == 0)
         {
                 free(buffer);
                 exit(0);

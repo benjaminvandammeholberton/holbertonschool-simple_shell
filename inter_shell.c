@@ -9,14 +9,14 @@ int inter_shell(void)
 {
         char *buffer = NULL, *path = NULL;
         char **args = NULL;
-        int flag = 0, statut, id = 0;
+        int flag = 0, statut = 0, id = 0;
 
         while (1)
         {
                 free(buffer);
                 flag = 0;
                 buffer = prompt(statut);
-                if (strcmp(buffer, "\n") == 0)
+                if (_strcmp(buffer, "\n") == 0)
                         continue;
                 args = tokenize(buffer, " \n");
                 path = checkingabsolutepath(args[0]);

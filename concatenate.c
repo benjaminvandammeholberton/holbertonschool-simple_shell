@@ -15,7 +15,7 @@ char *concatenate(char *str1, char *str2, char *str3)
         char *strc;
         int size;
 
-        size = strlen(str1) + strlen(str2) + strlen(str3) + 1; 
+        size = _strlen(str1) + _strlen(str2) + _strlen(str3) + 1; 
 
         strc = malloc(sizeof(char) * size);
         if (strc == NULL)
@@ -28,9 +28,9 @@ char *concatenate(char *str1, char *str2, char *str3)
                 return (NULL);
         }
 
-        strcpy (strc, str1);
-        strcat (strc, str2);
-        strcat (strc, str3);
+        _strcpy (strc, str1);
+        _strcat (strc, str2);
+        _strcat (strc, str3);
 
         return (strc);
 }
