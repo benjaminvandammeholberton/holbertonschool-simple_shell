@@ -25,6 +25,7 @@ int noninter_shell(void);
 char *_strcat(char *dest, char *src);
 char *_strcpy(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
+char *prompt2(int statut);
 
 
 

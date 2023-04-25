@@ -14,8 +14,9 @@ int noninter_shell(void)
         int flag = 0;
         int statut = 45;
 
-
-        buffer = prompt(statut);
+        while(1)
+        {
+        buffer = prompt2(statut);
         if (_strcmp(buffer, "\n") == 0)
         {
                 free(buffer);
@@ -46,5 +47,5 @@ int noninter_shell(void)
                 if (flag == 0)
                         free(path);
 		free(buffer);
-        return(0);
+        }
 }
