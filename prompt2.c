@@ -33,6 +33,9 @@ char *prompt2(int statut)
 	}
 	
 	if ((_strlen(buffer) - 1) == count)
+	{
+		free(buffer);
 		exit(0);
+	}
 	return (buffer);
 }
