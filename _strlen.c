@@ -1,10 +1,10 @@
 #include "hsh.h"
 
-/*
+/**
  * _strlen - function that returns the length of a string.
  * @s: variable that containt a string
  * Return: the number of caracter that composed the string s
- */
+*/
 
 int _strlen(const char *s)
 {

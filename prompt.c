@@ -26,6 +26,5 @@ char *prompt(int statut)
 			exit(1);
 		}
 	}
-	
 	return (buffer);
 }
