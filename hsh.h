@@ -9,17 +9,17 @@
 #include <sys/stat.h>
 #include <string.h>
 
-extern char ** environ;
+extern char **environ;
 
-char ** tokenize(char *str, char *delim);
+char **tokenize(char *str, char *delim);
 char *concatenate(char *str1, char *str2, char *str3);
-char *checkingpath (char *args);
+char *checkingpath(char *args);
 char *_getenv(const char *name);
-char *checkingabsolutepath (char *str);
+char *checkingabsolutepath(char *str);
 int _strncmp(const char *s1, const char *s2, size_t n);
 char *_strdup(char *str);
 int _strlen(const char *s);
-char *prompt (int statut);
+char *prompt(int statut);
 int inter_shell(void);
 int noninter_shell(void);
 char *_strcat(char *dest, char *src);
