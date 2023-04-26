@@ -12,25 +12,24 @@
  */
 char *concatenate(char *str1, char *str2, char *str3)
 {
-        char *strc;
-        int size;
+	char *strc;
+	int size;
 
-        size = _strlen(str1) + _strlen(str2) + _strlen(str3) + 1; 
+	size = _strlen(str1) + _strlen(str2) + _strlen(str3) + 1;
 
-        strc = malloc(sizeof(char) * size);
-        if (strc == NULL)
-                return (NULL);
+	strc = malloc(sizeof(char) * size);
+	if (strc == NULL)
+		return (NULL);
 
+	if (strc == NULL)
+	{
+		printf("Erreur");
+		return (NULL);
+	}
 
-        if (strc == NULL)
-        {
-                printf("Erreur");
-                return (NULL);
-        }
+	_strcpy(strc, str1);
+	_strcat(strc, str2);
+	_strcat(strc, str3);
 
-        _strcpy (strc, str1);
-        _strcat (strc, str2);
-        _strcat (strc, str3);
-
-        return (strc);
+	return (strc);
 }

@@ -3,13 +3,12 @@
 
 
 
-### Description
+## Description
 The ```simple shell``` is a command-line interface used to interact with the operating system.
 
 The shell acts as an intermediary between the user and the kernel, translating user commands into system calls and managing their execution.
 
-### Requirements
-
+## Requirements
 
 
 ### General
@@ -111,21 +110,16 @@ execution :
 ```
 ./hsh
 ```
-### Testing
+## Testing
 
 Our shell should work like this in interactive mode:
 
 ```
 $ ./hsh
-
 ($) /bin/ls
-
 hsh main.c shell.c
-
 ($)
-
 ($) exit
-
 $
 ```
 
@@ -133,24 +127,15 @@ But also in non-interactive mode:
 
 ```
 $ echo "/bin/ls" | ./hsh
-
 hsh main.c shell.c test_ls_2
-
 $
-
 $ cat test_ls_2
-
 /bin/ls
-
 /bin/ls
 $
-
 $ cat test_ls_2 | ./hsh
-
 hsh main.c shell.c test_ls_2
-
 hsh main.c shell.c test_ls_2
-
 $
 ```
 
@@ -163,6 +148,8 @@ valgrind <executablefile>
 ```
 
 Example :
+
+Valgrind dsiplays the prompt where you have to run a command (ls for example) :
 ```
 # valgrind ./hsh
 ==1265== Memcheck, a memory error detector
@@ -172,6 +159,8 @@ Example :
 ==1265==
 $ (enter your command here)
 ```
+
+When you exit the shell, it gives you a summary of the memory leaks like this :
 ```
 $ exit
 ==1265==
@@ -185,10 +174,13 @@ $ exit
 ==1265== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 ```
 
-### Man page
+## Man page
 
 You can open the man page with this command :
 
 ```
 man ./man_1_simple_shell
 ```
+## Authors
+
+This project was realized by Benjamin Vandamme and Quentin Rouger - C20 Holberton LAVAL

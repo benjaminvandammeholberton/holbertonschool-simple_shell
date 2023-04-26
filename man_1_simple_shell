@@ -2,16 +2,33 @@
 .SH NAME
 .B simple_shell
 .SH SYNOPSIS
-.B ./hsh is the executable of this simple_shell
+.B ./hsh
+is the executable of this simple_shell
 .SH DESCRIPTION
- This is a simple shell program that reads user commands from standard input
- and executes them. It provides a command line interface, with support for
- executing external commands, changing directories, and exiting the shell.
+ Simple_shell program is a command interpreter that provides a simple interface for users to execute commands on a UNIX system. It reads user input from the command line, interprets the input as a command, and executes the command.
 
+.SH OPTIONS
+It supports command lines with arguments.
+.B ls -l
+for example.
 
+.SH COMMANDS
+The following built-in commands are supported by the \fBsimple_shell\fP:
+
+.TP 10
+.B exit
+Exit the shell.
+
+.TP
+.B env
+Print the environment variables.
+
+.TP
+.B cd
+Change the current working directory.
 
 .SH EXAMPLE
-.B The shell should work like this in interactive mode:
+.B Simple_shell should work like this in interactive mode:
 .br
  $ ./hsh
 .br
@@ -51,8 +68,18 @@
 .br
 .SH RETURN VALUE
 
-If the command is welled execute, the list will appear.
+If the command is welled execute, the list will appear( for the command ls for example).
 If it fail, an error message will be displayed.
 
+.SH SEE ALSO
+.PP
+.BR sh (1),
+.BR bash (1),
+.BR zsh (1)
+
+.SH BUGS
+
+No known bugs.
+Please report any issues to the authors.
 .SH AUTHORS
 This version of shell was written by Benjamin Vandamme and Quentin Rouger.

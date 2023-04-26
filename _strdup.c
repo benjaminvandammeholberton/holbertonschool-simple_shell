@@ -11,22 +11,22 @@
 
 char *_strdup(char *str)
 {
-    	size_t len;
-    	char *strDuplicate;
+	size_t len;
+	char *strDuplicate;
 	size_t i;
 
-    	if (str == NULL)
-        	return NULL;
+	if (str == NULL)
+		return (NULL);
 
-    	len = _strlen(str);
-    	strDuplicate = malloc(len + 1);
+	len = _strlen(str);
+	strDuplicate = malloc(len + 1);
 
-    	if (strDuplicate == NULL)
-        	return NULL;
+	if (strDuplicate == NULL)
+		return (NULL);
 
-    	for (i = 0; i < len; i++)
-        	strDuplicate[i] = str[i];
-    	strDuplicate[len] = '\0';
+	for (i = 0; i < len; i++)
+		strDuplicate[i] = str[i];
+	strDuplicate[len] = '\0';
 
-    	return strDuplicate;
+	return (strDuplicate);
 }
