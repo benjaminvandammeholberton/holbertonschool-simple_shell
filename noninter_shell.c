@@ -1,10 +1,22 @@
 #include "hsh.h"
 
 /**
+ * freeargsandinput - free memory
+ * @args: arguments
+ * @input: input
+ */
+
+void freeargsandinput(char **args, char *input)
+{
+	free(args);
+	free(input);
+}
+
+
+/**
  * noninter_shell - function that runs the Simple Shell in interactive mode
  * Return: 0 on success
  */
-
 int noninter_shell(void)
 {
 	char *input = NULL, *command = NULL;
@@ -14,6 +26,7 @@ int noninter_shell(void)
 	while (1)
 	{
 		input = prompt2(statut);
+		checkinexitbuiltin(input);
 		if (_strcmp(input, "\n") == 0)
 		{
 			free(input);
@@ -28,8 +41,7 @@ int noninter_shell(void)
 		if (command == NULL)
 		{
 			fprintf(stderr, "./hsh: 1: %s: not found\n", args[0]);
-			free(args);
-			free(input);
+			freeargsandinput(args, input);
 			exit(127);
 		}
 		id = fork();
@@ -41,9 +53,8 @@ int noninter_shell(void)
 				exit(1);
 		}
 		wait(&statut);
-		free(args);
+		freeargsandinput(args, input);
 		if (flag == 0)
 			free(command);
-		free(input);
 	}
 }
