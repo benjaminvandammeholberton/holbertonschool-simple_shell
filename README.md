@@ -3,12 +3,12 @@
 
 
 
-## Description
+## Description 📋
 The ```simple shell``` is a command-line interface used to interact with the operating system.
 
 The shell acts as an intermediary between the user and the kernel, translating user commands into system calls and managing their execution.
 
-## Requirements
+## Requirements 🚩
 
 
 ### General
@@ -110,7 +110,7 @@ execution :
 ```
 ./hsh
 ```
-## Testing
+## Testing 🖇
 
 Our shell should work like this in interactive mode:
 
@@ -181,6 +181,6 @@ You can open the man page with this command :
 ```
 man ./man_1_simple_shell
 ```
-## Authors
+## Authors 🖋
 
 This project was realized by Benjamin Vandamme and Quentin Rouger - C20 Holberton LAVAL
