@@ -1,7 +1,7 @@
 #include "hsh.h"
 
 /**
- * tokenize - tokenize a string with strtok
+ * tokenize - tokenize a string into an array of strings
  * @str: string
  * @delim: delimiter of the string
  *
