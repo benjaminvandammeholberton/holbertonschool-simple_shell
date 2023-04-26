@@ -32,7 +32,7 @@ int noninter_shell(void)
 		{
 			free(args);
 			free(buffer);
-			fprintf(stderr, "hsh: %s: command not found\n", args[0]);
+			fprintf(stderr, "./hsh: 1: %s: not found\n", args[0]);
 			exit(127);
 		}
 		if ((id = fork()) == -1)
