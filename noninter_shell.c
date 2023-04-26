@@ -26,7 +26,8 @@ int noninter_shell(void)
 	while (1)
 	{
 		input = prompt2(statut);
-		checkinexitbuiltin(input);
+		if (checkinbuiltin(input) == 0)
+			continue;
 		if (_strcmp(input, "\n") == 0)
 		{
 			free(input);
