@@ -1,7 +1,7 @@
 #include "hsh.h"
 
 /**
- * checkinbuiltin - function thatt check if the input given is a builtin 
+ * checkinbuiltin - function thatt check if the input given is a builtin
  * function and execute it if it does.
  * @input: input
  * Return: 0 if the function is executed 1 if not.
@@ -25,10 +25,12 @@ int checkinbuiltin(char *input)
 		}
 		flag = 1;
 	}
-	free (input);
 	if (flag == 1)
-		return(0);
-	return(1);
+	{
+		free(input);
+		return (0);
+	}
+	return (1);
 }
 
 /**
