@@ -30,9 +30,9 @@ int noninter_shell(void)
 			path = checkingpath(args[0]);
 		if (path == NULL)
 		{
+			fprintf(stderr, "./hsh: 1: %s: not found\n", args[0]);
 			free(args);
 			free(buffer);
-			fprintf(stderr, "./hsh: 1: %s: not found\n", args[0]);
 			exit(127);
 		}
 		if ((id = fork()) == -1)
