@@ -7,12 +7,9 @@
 
 int noninter_shell(void)
 {
-	char *buffer = NULL;
-	int id = 0;
+	char *buffer = NULL, *path = NULL;
 	char **args = NULL;
-	char *path = NULL;
-	int flag = 0;
-	int statut = 0;
+	int flag = 0, statut = 0, id = 0;
 
 	while (1)
 	{
@@ -35,7 +32,8 @@ int noninter_shell(void)
 			free(buffer);
 			exit(127);
 		}
-		if ((id = fork()) == -1)
+		id = fork();
+		if (id   ==  -1)
 			exit(1);
 		if (id == 0)
 		{
