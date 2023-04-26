@@ -1,7 +1,7 @@
 #include "hsh.h"
 
 /**
- * checkingabsolutepath - function that check if the
+ * checkingdirectory - function that check if the
  * given string is a absolute path to a program
  * @str: pointer to the string that has to be checked
  * Return: pointer to the argument string if
