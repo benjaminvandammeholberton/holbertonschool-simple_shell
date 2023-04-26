@@ -9,7 +9,7 @@
 
 int checkinbuiltin(char *input)
 {
-	int i, flag;
+	int i, flag = 0;
 
 	if (_strcmp(input, "exit\n") == 0)
 	{
