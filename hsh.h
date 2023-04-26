@@ -27,7 +27,7 @@ char *_strcpy(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
 char *prompt2(int statut);
 void exit_shell(void);
-void checkinexitbuiltin(char *input);
+int checkinbuiltin(char *input);
 void freeargsandinput(char **args, char *input);
 
 
