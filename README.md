@@ -174,7 +174,7 @@ $ exit
 ==1265== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 ```
 
-## Man page
+## Man page 📋
 
 You can open the man page with this command :
 

@@ -15,7 +15,7 @@ char **tokenize(char *str, char *delim);
 char *concatenate(char *str1, char *str2, char *str3);
 char *checkingpath(char *args);
 char *_getenv(const char *name);
-char *checkingabsolutepath(char *str);
+char *checkingdirectory(char *str);
 int _strncmp(const char *s1, const char *s2, size_t n);
 char *_strdup(char *str);
 int _strlen(const char *s);
