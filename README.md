@@ -110,6 +110,9 @@ execution :
 ```
 ./hsh
 ```
+## Flowchart 🖼️
+![image](https://github.com/benjaminvandammeholberton/holbertonschool-simple_shell/blob/2c67806bc5d08bfb665ea9ab9edbfd5b5cfb906a/flowchart.jpg)
+
 ## Testing 🖇
 
 Our shell should work like this in interactive mode:
