@@ -17,6 +17,15 @@ It supports command lines with arguments.
 .B ls -l
 for example.
 
+.SH BUILT-INS
+This section lists the builtin commands :
+.TP
+.I exit
+Exits the shell.
+.TP
+.I env
+Prints the current environment.
+
 .SH EXAMPLE
 .B Simple_shell should work like this in interactive mode:
 .br
